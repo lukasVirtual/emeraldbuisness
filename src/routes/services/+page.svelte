@@ -15,21 +15,21 @@
 	<div class="flex justify-evenly py-60 mb-80">
 		<div class="flex items-center justify-center">
 			<a href="#websites" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md" src="/images/website.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/website.jpg" alt="" />
 			</a>
-			<span class=" absolute text-center text-white text-2xl font-bold">Websites</span>
+			<span class="absolute text-center text-white text-2xl font-bold">Websites</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#desktop" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md" src="/images/desktop.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/desktop.jpg" alt="" />
 			</a>
 			<span class="absolute text-center text-white text-2xl font-bold">Desktop Applications</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#automation" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md" src="/images/automation.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/automation.jpg" alt="" />
 			</a>
 			<span class="absolute text-center text-white text-2xl font-bold">Automation</span>
 		</div>

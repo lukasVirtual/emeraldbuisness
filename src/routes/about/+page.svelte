@@ -40,7 +40,7 @@
 	stats shadow"
 	>
 		<div class="stat">
-			<div class="stat-figure text-secondary">
+			<div class="stat-figure text-secondary text-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
@@ -54,9 +54,11 @@
 					/></svg
 				>
 			</div>
-			<div class="stat-title text-white">Downloads</div>
-			<div class="stat-value text-white">31K</div>
-			<div class="stat-desc text-white">Jan 1st - Feb 1st</div>
+			<div class="text-center">
+				<div class="stat-title text-white">Downloads</div>
+				<div class="stat-value text-white">31K</div>
+				<div class="stat-desc text-white">Jan 1st - Feb 1st</div>
+			</div>
 		</div>
 
 		<div class="stat">
@@ -74,9 +76,11 @@
 					/></svg
 				>
 			</div>
-			<div class="stat-title text-white">New Users</div>
-			<div class="stat-value text-white">4,200</div>
-			<div class="stat-desc text-white">↗︎ 400 (22%)</div>
+			<div class="text-center">
+				<div class="stat-title text-white">New Users</div>
+				<div class="stat-value text-white">4,200</div>
+				<div class="stat-desc text-white">↗︎ 400 (22%)</div>
+			</div>
 		</div>
 
 		<div class="stat">
@@ -94,9 +98,11 @@
 					/></svg
 				>
 			</div>
-			<div class="stat-title text-white">New Registers</div>
-			<div class="stat-value text-white">1,200</div>
-			<div class="stat-desc text-white">↘︎ 90 (14%)</div>
+			<div class="text-center">
+				<div class="stat-title text-white">New Registers</div>
+				<div class="stat-value text-white">1,200</div>
+				<div class="stat-desc text-white">↘︎ 90 (14%)</div>
+			</div>
 		</div>
 	</div>
 </div>
