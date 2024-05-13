@@ -2,6 +2,8 @@
 	import Icon from '@iconify/svelte';
 	import Typewriter from 'svelte-typewriter';
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
+	export const prerender = true
 </script>
 
 <div
@@ -15,7 +17,9 @@
 					<h1 class="text-5xl font-bold">Tailored Software</h1>
 				</Typewriter>
 				<p class="text-2xl font-medium pb-5">for all your needs</p>
-				<button class="btn btn-primary">Get Started</button>
+				<a href="{base}/services">
+					<button class="btn bg-green-400">Get Started</button>
+				</a>
 			</div>
 		</div>
 	</div>

@@ -1,19 +1,21 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 </script>
 
 <div class="flex items-center justify-center bg-black">
-	<img class="object-cover blur-md w-full h-[45vh]" src="/images/partner.jpg" alt="" />
+	<img class="object-cover blur-md w-full h-[45vh]" src="{base}/images/partner.jpg" alt="" />
 	<h1
 		class="absolute text-white top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-6xl font-bold"
 	>
-		Your New Partner!
+		Ihr neuer Partner!
 	</h1>
 	<p
 		class="absolute text-gray-300 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
 	>
-		Modern, fresh Software to pimp up your Companies Image
+		Moderne Software welche ihr Unternehmen zu repräsentiert
 	</p>
-	<button class="absolute mt-36 btn btn-primary">Contact Us!</button>
+	<a href="{base}/contact" class="absolute mt-36 btn bg-green-400">Kontaktieren sie uns!</a>
 </div>
 <div class="flex text-white flex-col-reverse items-center pt-10 bg-black">
 	<div
@@ -21,16 +23,16 @@
 		flex-col
 		w-[40%] h-[35rem]"
 	>
-		<h1 class="text-5xl text-center">Who are we?</h1>
-		<p class="break-normal md:break-all mt-8">
-			Lorem ipsum dolor sit amet consectetur. Ut senectus pellentesque justo in congue semper
-			hendrerit leo lectus. Congue et sed blandit dignissim. Odio eget fermentum venenatis quisque.
-			Netus pulvinar in et massa proin sagittis. Id nec netus mattis sodales. Vel vestibulum lacinia
-			iaculis ornare. Ligula egestas aliquet neque tincidunt pulvinar.
+		<h1 class="text-5xl text-center">Wer sind wir?</h1>
+		<p class="break-word md:break-all mt-8">
+			Wir sind ein junges Unternehmen, welches sich ein Ziel gesetzt hat Software auf einen neuen
+			Standard zu bringen! Deutschland war und ist für Qualität bekannt in der Industrie, jedoch
+			nicht in der Digitalen Welt. Das Ändern wir! Pünktlich, Perfekt und Wunderschön. Das sind wir
+			und unsere Software.
 		</p>
 	</div>
 </div>
-<div class="flex text-white bg-black">
+<!-- <div class="flex text-white bg-black">
 	<div
 		class="
 	bg-black
@@ -105,19 +107,19 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <div class="flex text-white flex-col-reverse items-center pt-10 bg-black">
 	<div
 		class="hero-content
 		flex-col
 		w-[40%] h-[35rem]"
 	>
-		<h1 class="text-5xl text-center">Why choosing us for your next Project?</h1>
-		<p class="break-normal md:break-all mt-8">
-			Lorem ipsum dolor sit amet consectetur. Ut senectus pellentesque justo in congue semper
-			hendrerit leo lectus. Congue et sed blandit dignissim. Odio eget fermentum venenatis quisque.
-			Netus pulvinar in et massa proin sagittis. Id nec netus mattis sodales. Vel vestibulum lacinia
-			iaculis ornare. Ligula egestas aliquet neque tincidunt pulvinar.
+		<h1 class="text-5xl text-center">Warum sie uns für ihr nächstes Projekt wählen sollten!</h1>
+		<p class="break-word md:break-all mt-8">
+			Durch Mehrjährige Erfahrung in der IT-Branche wissen wir die Schwächen und Umsatzkiller vieler
+			Unternehmen, welche wir erfolgreich für Unternehmen lösen. Unternehmen brauchen
+			Geschwindigkeit, Erreichbarkeit und Qualität all dies verstehen wir und setzen es erfolgreich
+			in der Praxis um. Überzeugen sie sich selbst!
 		</p>
 	</div>
 </div>

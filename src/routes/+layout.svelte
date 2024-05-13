@@ -1,35 +1,51 @@
 <script lang="ts">
 	import '../input.css';
-	import Icon from '@iconify/svelte';
+	
 	import { page } from '$app/stores';
 	import PageTransition from '../components/PageTransition.svelte';
+	import { base } from '$app/paths';
+
+	export const prerender = true;
 </script>
 
-<div class="navbar bg-base-100">
-	<div class="flex-1">
-		<a href="/"><Icon class="m-3" height="3rem" icon="game-icons:emerald" color="lime" /> </a>
-		<!-- <p class="font-light font-serif text-lg">Emerald Solutions</p> -->
-	</div>
-	<div class="flex-none">
-		<ul class="menu menu-horizontal px-1">
-			<li class:active={$page.url.pathname == '/'}>
-				<a href="/">Home</a>
-			</li>
-		</ul>
-		<ul class="menu menu-horizontal px-1">
-			<li class:active={$page.url.pathname == '/services'}><a href="/services">Services</a></li>
-		</ul>
-		<ul class="menu menu-horizontal px-1">
-			<li class:active={$page.url.pathname == '/about'}><a href="/about">About</a></li>
-		</ul>
 
-		<ul class="menu menu-horizontal px-1">
-			<li class:active={$page.url.pathname == '/contact'}><a href="/contact">Contact</a></li>
-		</ul>
+<div class="bg-base-100">
+	<div class="relative flex h-16 items-center">
+		<!-- <a href="/"><Icon class="m-3" height="3rem" icon="game-icons:emerald" color="lime" /> </a> -->
 
-		<ul class="menu menu-horizontal px-1">
+		<div>
+			<a href="{base}">
+				<img class=" w-46 h-44" src="{base}/images/logo_transparent.png" alt="" />
+			</a>
+		</div>
+
+		<!-- <p class="font-light font-futura text-lg">Emerald Solutions</p> -->
+		<div class="flex absolute w-full">
+			<div class=" ml-auto">
+				<ul class="menu menu-horizontal px-1">
+					<li class:active={$page.url.pathname == '/'}>
+						<a href="{base}/">Home</a>
+					</li>
+				</ul>
+				<ul class="menu menu-horizontal px-1">
+					<li class:active={$page.url.pathname == '/services'}><a href="{base}/services">Services</a></li>
+				</ul>
+			</div>
+
+			<div class="mr-auto">
+				<ul class="menu menu-horizontal px-1">
+					<li class:active={$page.url.pathname == '/about'}><a href="{base}/about">About</a></li>
+				</ul>
+
+				<ul class="menu menu-horizontal px-1">
+					<li class:active={$page.url.pathname == '/contact'}><a href="{base}/contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- <ul class="menu menu-horizontal px-1">
 			<li class:active={$page.url.pathname == '/policy'}><a href="/policy">Policy</a></li>
-		</ul>
+		</ul> -->
+		</div>
 	</div>
 </div>
 

@@ -1,5 +1,7 @@
 <script lang="ts">
-	function scroll({ target }: { target: any }) {
+	import { base } from "$app/paths";
+
+	function scroll({ target}: {target:any}) {
 		// const el = document.querySelector(target.getAttribute('href') as string);
 
 		const t = target.parentElement.getAttribute('href');
@@ -15,21 +17,21 @@
 	<div class="flex justify-evenly py-60 mb-80">
 		<div class="flex items-center justify-center">
 			<a href="#websites" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/website.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/website.jpg" alt="" />
 			</a>
 			<span class="absolute text-center text-white text-2xl font-bold">Websites</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#desktop" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/desktop.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/desktop.jpg" alt="" />
 			</a>
 			<span class="absolute text-center text-white text-2xl font-bold">Desktop Applications</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#automation" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="/images/automation.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/automation.jpg" alt="" />
 			</a>
 			<span class="absolute text-center text-white text-2xl font-bold">Automation</span>
 		</div>
@@ -37,21 +39,15 @@
 	<div class="bg-black text-white">
 		<div class="hero h-[45rem]" id="websites">
 			<div class="hero-content flex-col lg:flex-row-reverse">
-				<img src="/images/website.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/website.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
 				<div>
 					<h1 class="text-5xl font-bold">Websites</h1>
 					<p class="py-6">
-						L odio bibendum euismod tempor a quam. Molestie in scelerisque rhoncus ultrices eget
-						massa faucibus. Amet integer pulvinar aliquet tristique et morbi tempus commodo.
-						Sollicitudin massa porttitor blandit tortor pellentesque. Lectus ullamcorper ultrices
-						duis turpis euismod mauris tincidunt. Nulla fringilla eget est dapibus. Elementum eget
-						nunc urna semper neque. Egestas lobortis turpis senectus suspendisse nisl lorem. Commodo
-						commodo libero sem in sed. L odio bibendum euismod tempor a quam. Molestie in
-						scelerisque rhoncus ultrices eget massa faucibus. Amet integer pulvinar aliquet
-						tristique et morbi tempus commodo. Sollicitudin massa porttitor blandit tortor
-						pellentesque. Lectus ullamcorper ultrices duis turpis euismod mauris tincidunt. Nulla
-						fringilla eget est dapibus. Elementum eget nunc urna semper neque. Egestas lobortis
-						turpis senectus suspendisse nisl lorem. Commodo commodo libero sem in sed.
+						Unser Ziel ist es, Ihnen dabei zu helfen, Ihre Online-Präsenz zu stärken und zu
+						optimieren. Egal, ob Sie eine neue Website von Grund auf erstellen möchten, Ihre
+						bestehende Website überarbeiten oder einzigartige Weblösungen für Ihr Unternehmen
+						entwickeln wollen, wir haben die richtigen Tools und Experten, um Ihre Vision in die
+						Realität umzusetzen.
 					</p>
 				</div>
 			</div>
@@ -59,42 +55,31 @@
 
 		<div class="hero h-[45rem]" id="desktop">
 			<div class="hero-content flex-col lg:flex-row">
-				<img src="/images/desktop.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/desktop.jpg" class="max-w-sm rounded-lg shadow-2xl" />
 				<div>
 					<h1 class="text-5xl font-bold text-right">Desktop Applications</h1>
 					<p class="py-6 text-right">
-						L odio bibendum euismod tempor a quam. Molestie in scelerisque rhoncus ultrices eget
-						massa faucibus. Amet integer pulvinar aliquet tristique et morbi tempus commodo.
-						Sollicitudin massa porttitor blandit tortor pellentesque. Lectus ullamcorper ultrices
-						duis turpis euismod mauris tincidunt. Nulla fringilla eget est dapibus. Elementum eget
-						nunc urna semper neque. Egestas lobortis turpis senectus suspendisse nisl lorem. Commodo
-						commodo libero sem in sed. L odio bibendum euismod tempor a quam. Molestie in
-						scelerisque rhoncus ultrices eget massa faucibus. Amet integer pulvinar aliquet
-						tristique et morbi tempus commodo. Sollicitudin massa porttitor blandit tortor
-						pellentesque. Lectus ullamcorper ultrices duis turpis euismod mauris tincidunt. Nulla
-						fringilla eget est dapibus. Elementum eget nunc urna semper neque. Egestas lobortis
-						turpis senectus suspendisse nisl lorem. Commodo commodo libero sem in sed.
+						Selbstverständlich bieten wir Ihnen eine umfassende Palette von Dienstleistungen im
+						Bereich der Desktop-Anwendungsentwicklung an. Unser Ziel ist es, Ihnen dabei zu helfen,
+						maßgeschneiderte Softwarelösungen zu entwickeln, die Ihre Geschäftsprozesse optimieren
+						und Ihre Ziele erreichen. Egal, ob Sie eine spezielle Hardware-Anwendung, eine
+						Systemebene-Software oder eine komplexe 3D-Modellierungssoftware benötigen, wir haben
+						die Expertise und die Tools, um Ihre Vision in die Realität umzusetzen.
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="hero h-[45rem]" id="automation">
 			<div class="hero-content flex-col lg:flex-row-reverse">
-				<img src="/images/automation.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/automation.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
 				<div>
 					<h1 class="text-5xl font-bold">Automation</h1>
 					<p class="py-6">
-						L odio bibendum euismod tempor a quam. Molestie in scelerisque rhoncus ultrices eget
-						massa faucibus. Amet integer pulvinar aliquet tristique et morbi tempus commodo.
-						Sollicitudin massa porttitor blandit tortor pellentesque. Lectus ullamcorper ultrices
-						duis turpis euismod mauris tincidunt. Nulla fringilla eget est dapibus. Elementum eget
-						nunc urna semper neque. Egestas lobortis turpis senectus suspendisse nisl lorem. Commodo
-						commodo libero sem in sed. L odio bibendum euismod tempor a quam. Molestie in
-						scelerisque rhoncus ultrices eget massa faucibus. Amet integer pulvinar aliquet
-						tristique et morbi tempus commodo. Sollicitudin massa porttitor blandit tortor
-						pellentesque. Lectus ullamcorper ultrices duis turpis euismod mauris tincidunt. Nulla
-						fringilla eget est dapibus. Elementum eget nunc urna semper neque. Egestas lobortis
-						turpis senectus suspendisse nisl lorem. Commodo commodo libero sem in sed.
+						Wie schaffen sie es lästige Aufgaben, die nur Zeit und Geld kosten loszuwerden? Wir
+						optimieren ihr Alltagsgeschäft und gestalten es effizienter. Egal, ob Sie sich auf die
+						Automatisierung einzelner Aufgaben, den gesamten Arbeitsablauf oder unternehmensweite
+						Prozesse konzentrieren möchten, wir haben die Expertise und die Tools, um Ihre Vision in
+						die Realität umzusetzen.
 					</p>
 				</div>
 			</div>
