@@ -25,7 +25,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="w-1/2 p-4">
-		<img src="{base}/images/meeting.jpg" alt="Contact Us" class="w-3/4 h-auto mb-64" />
+	<div class="w-1/2 p-4 max-md:hidden">
+		<img src="{base}/images/meeting.png" alt="Contact Us" class=" w-[40%] max-h-[50rem] mb-64" />
 	</div>
 </div>

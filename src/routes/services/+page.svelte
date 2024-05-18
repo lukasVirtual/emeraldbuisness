@@ -14,32 +14,33 @@
 </script>
 
 <div class="min-h-screen bg-base-200">
-	<div class="flex justify-evenly py-60 mb-80">
-		<div class="flex items-center justify-center">
+	<div class="md:flex justify-evenly py-60 mb-80">
+		<div class="flex items-center justify-center ">
 			<a href="#websites" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/website.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/website.png" alt="" />
+
 			</a>
-			<span class="absolute text-center text-white text-2xl font-bold">Websites</span>
+			<span class="absolute text-center  text-2xl font-bold">Websites</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#desktop" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/desktop.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/desktop.png" alt="" />
 			</a>
-			<span class="absolute text-center text-white text-2xl font-bold">Desktop Applications</span>
+			<span class="absolute text-center text-2xl font-bold">Desktop Applications</span>
 		</div>
 
 		<div class="flex items-center justify-center">
 			<a href="#automation" on:click|preventDefault={scroll}>
-				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/automation.jpg" alt="" />
+				<img class="h-60 w-80 blur-md hover:scale-105" src="{base}/images/automation.png" alt="" />
 			</a>
-			<span class="absolute text-center text-white text-2xl font-bold">Automation</span>
+			<span class="absolute text-center text-2xl font-bold">Automation</span>
 		</div>
 	</div>
 	<div class="bg-black text-white">
 		<div class="hero h-[45rem]" id="websites">
 			<div class="hero-content flex-col lg:flex-row-reverse">
-				<img src="{base}/images/website.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/website.png" class="h-64 max-w-sm rounded-lg shadow-2xl" />
 				<div>
 					<h1 class="text-5xl font-bold">Websites</h1>
 					<p class="py-6">
@@ -55,10 +56,10 @@
 
 		<div class="hero h-[45rem]" id="desktop">
 			<div class="hero-content flex-col lg:flex-row">
-				<img src="{base}/images/desktop.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/desktop.png" class="h-64 max-sm:w-[90%] max-w-sm rounded-lg shadow-2xl" />
 				<div>
-					<h1 class="text-5xl font-bold text-right">Desktop Applications</h1>
-					<p class="py-6 text-right">
+					<h1 class="text-5xl font-bold ">Desktop Applications</h1>
+					<p class="py-6 ">
 						Selbstverständlich bieten wir Ihnen eine umfassende Palette von Dienstleistungen im
 						Bereich der Desktop-Anwendungsentwicklung an. Unser Ziel ist es, Ihnen dabei zu helfen,
 						maßgeschneiderte Softwarelösungen zu entwickeln, die Ihre Geschäftsprozesse optimieren
@@ -71,7 +72,7 @@
 		</div>
 		<div class="hero h-[45rem]" id="automation">
 			<div class="hero-content flex-col lg:flex-row-reverse">
-				<img src="{base}/images/automation.jpg" class="h-64 max-w-sm rounded-lg shadow-2xl" />
+				<img src="{base}/images/automation.png" class="h-64 max-w-sm rounded-lg shadow-2xl" />
 				<div>
 					<h1 class="text-5xl font-bold">Automation</h1>
 					<p class="py-6">

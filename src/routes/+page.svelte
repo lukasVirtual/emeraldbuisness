@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex justify-center justify-evenly">
+	<div class="md:flex max-sm:pt-10 justify-center justify-evenly">
 		<div class="flex justify-center">
 			<h1 class="absolute font-extrabold text-center text-2xl font-serif">UI/UX Design</h1>
 			<Icon class="mt-11" height="8rem" icon="mdi:design" />

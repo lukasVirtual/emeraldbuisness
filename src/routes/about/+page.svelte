@@ -3,27 +3,34 @@
 
 </script>
 
-<div class="flex items-center justify-center bg-black">
-	<img class="object-cover blur-md w-full h-[45vh]" src="{base}/images/partner.jpg" alt="" />
+
+<div class="relative min-h-[45vh] flex items-center justify-center bg-black">
+	<img class="object-cover blur-md w-full h-[45vh]" src="{base}/images/partner.png" alt="" />
+
+	<figure class="absolute mx-auto">
+
 	<h1
-		class="absolute text-white top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-6xl font-bold"
+		class=" font-extrabold text-white  text-center text-6xl "
 	>
 		Ihr neuer Partner!
 	</h1>
 	<p
-		class="absolute text-gray-300 mt-8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center"
+		class="font-bold text-gray-200 text-center"
 	>
-		Moderne Software welche ihr Unternehmen zu repräsentiert
+		Moderne Software welche ihr Unternehmen repräsentiert
 	</p>
-	<a href="{base}/contact" class="absolute mt-36 btn bg-green-400">Kontaktieren sie uns!</a>
+
+	<a href="{base}/contact" class="relative left-[28%] mt-10  btn bg-green-400">Kontaktieren sie uns!</a>
+
+	</figure>
 </div>
 <div class="flex text-white flex-col-reverse items-center pt-10 bg-black">
 	<div
-		class="hero-content
+		class="
 		flex-col
-		w-[40%] h-[35rem]"
+		w-[40%] md:h-[35rem]"
 	>
-		<h1 class="text-5xl text-center">Wer sind wir?</h1>
+		<h1 class="text-5xl pt-20 text-center">Wer sind wir?</h1>
 		<p class="break-word md:break-all mt-8">
 			Wir sind ein junges Unternehmen, welches sich ein Ziel gesetzt hat Software auf einen neuen
 			Standard zu bringen! Deutschland war und ist für Qualität bekannt in der Industrie, jedoch
@@ -32,6 +39,39 @@
 		</p>
 	</div>
 </div>
+
+<div class="flex  text-white flex-col-reverse items-center pt-10 bg-black">
+	<div
+		class="
+		w-[40%] md:h-[35rem]"
+	>
+		<h1 class="text-5xl text-center">Warum sie uns für ihr nächstes Projekt wählen sollten!</h1>
+		<p class="break-word md:break-all mt-8">
+			Durch Mehrjährige Erfahrung in der IT-Branche wissen wir die Schwächen und Umsatzkiller vieler
+			Unternehmen, welche wir erfolgreich für Unternehmen lösen. Unternehmen brauchen
+			Geschwindigkeit, Erreichbarkeit und Qualität all dies verstehen wir und setzen es erfolgreich
+			in der Praxis um. Überzeugen sie sich selbst!
+		</p>
+	</div>
+</div>
+<!-- <div class="flex flex-col md:flex-row items-center justify-center bg-black ">
+    <img class="object-cover blur-md w-full h-[45vh]" src="{base}/images/partner.png" alt="" />
+    <h1 class="absolute font-extrabold text-white  left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-6xl">
+        Ihr neuer Partner!
+    </h1>
+    <p class="absolute font-bold text-gray-200 mt-16 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+        Moderne Software welche ihr Unternehmen repräsentiert
+    </p>
+    <a href="{base}/contact" class="absolute mt-36 btn bg-green-400 text-white px-4 py-2 rounded-lg">Kontaktieren sie uns!</a>
+</div>
+<div class="flex flex-col-reverse items-center pt-10 bg-black min-h-screen">
+    <div class="hero-content text-white flex flex-col w-[40%] h-[35rem] mx-auto">
+        <h1 class="text-5xl text-center">Wer sind wir?</h1>
+        <p class="break-word md:break-all mt-8">
+            Wir sind ein junges Unternehmen, welches sich ein Ziel gesetzt hat Software auf einen neuen Standard zu bringen Deutschland war und ist für Qualität bekannt in der Industrie, jedoch nicht in der Digitalen Welt. Das Ändern wir Pünktlich, Perfekt und Wunderschön. Das sind wir und unsere Software.
+        </p>
+    </div>
+</div> -->
 <!-- <div class="flex text-white bg-black">
 	<div
 		class="
@@ -108,21 +148,7 @@
 		</div>
 	</div>
 </div> -->
-<div class="flex text-white flex-col-reverse items-center pt-10 bg-black">
-	<div
-		class="hero-content
-		flex-col
-		w-[40%] h-[35rem]"
-	>
-		<h1 class="text-5xl text-center">Warum sie uns für ihr nächstes Projekt wählen sollten!</h1>
-		<p class="break-word md:break-all mt-8">
-			Durch Mehrjährige Erfahrung in der IT-Branche wissen wir die Schwächen und Umsatzkiller vieler
-			Unternehmen, welche wir erfolgreich für Unternehmen lösen. Unternehmen brauchen
-			Geschwindigkeit, Erreichbarkeit und Qualität all dies verstehen wir und setzen es erfolgreich
-			in der Praxis um. Überzeugen sie sich selbst!
-		</p>
-	</div>
-</div>
+
 <!-- <div -->
 <!-- 	class=" -->
 <!-- 	bg-black -->
